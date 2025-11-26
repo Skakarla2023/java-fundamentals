@@ -146,6 +146,18 @@ public class ArraysOneShot {
             arr[i] = arr[nums.length-i-1];
             arr[nums.length-i-1] = temp;
         }
+
+        // Count occurences
+
+
+        // Find index of a value
+
+
+        // FIND SECOND LARGEST ELEMENT
+
+
+        // FIND SECOND SMALLEST ELEMENT
+        
         
         System.out.println("Arrays in reverse order:"+Arrays.toString(nums));
         
