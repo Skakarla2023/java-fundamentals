@@ -38,3 +38,102 @@ String b = new String("Hello");
 - A separate object in Heap → used by b
 
 - So a and b are NOT the same object.
+
+
+## String Concatenation
+
+- You can combine two strings in java using the '+' operator.
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        String fname = "John";
+        String lname = "Doe";
+        System.out.println("My name is "+fname+" "+lname);
+        
+        String name = fname+lname;
+        System.out.println(name);
+    }
+}
+```
+
+- You can also join more than two strings by chaining concat() calls:
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        
+        String a = "Java ";
+        String b = "is ";
+        String c = "fun";
+        
+        System.out.println(a.concat(b).concat(c));
+        
+    }
+}
+```
+
+> Note: While you can use concat() to join multiple strings, most developers prefer the + operator because it is shorter and easier to read.
+
+
+
+### Java Numbers and Strings
+
+- Java uses the + operator for both addition and concatenation.
+
+- Numbers are added. Strings are concatenated.
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        
+        int a = 10;
+        int b = 5;
+        System.out.println(a+b);
+        
+        int c = 20;
+        String d = "30";
+        System.out.println(c+d);
+        
+        String x = "apple ";
+        String y = "is tasty";
+        System.out.println(x+y);
+        
+    }
+}
+```
+
+#### Output:
+
+```
+15
+2030
+apple is tasty
+```
+
+### Strings - Special Characters
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        
+        String text = "Java is \"fun\" to learn";
+        System.out.println(text);
+        
+        String a = "Java is 'fun' to learn";
+        System.out.println(a);
+        String b = "Java is \"fun\" to learn";
+        System.out.println(b);
+        
+    }
+}
+```
+
+#### Output:
+
+```
+Java is "fun" to learn
+Java is 'fun' to learn
+Java is "fun" to learn
+```
+
