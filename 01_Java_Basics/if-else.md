@@ -30,3 +30,20 @@ public class Main {
 }
 ```
 
+#### Short Hand if...else
+
+
+```
+variable = (condition) ? expressionTrue :  expressionFalse;
+```
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        
+        int time = 14;
+        String result = (time>12)?"Good afternoon":"Good evening";
+        System.out.println(result);
+    }
+}
+```
