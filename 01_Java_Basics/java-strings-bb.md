@@ -36,3 +36,39 @@ public class Main {
 - using StringBUilder
 
 ```java
+public class Main {
+    public static void main(String[] args) {
+        // creating a StringBuilder
+        StringBuilder sb = new StringBuilder("Hello");
+        System.out.println("Initial: "+sb);
+        
+        // append(add text at the end)
+        sb.append(" World");
+        System.out.println("After append: "+sb);
+        
+        // insert (add text in middle)
+        sb.insert(5,",Java");
+        System.out.println("After insert: "+sb);
+        
+        //delete
+        sb.delete(5,10);
+        System.out.println("After delete: "+sb);
+        
+        //replace
+        sb.replace(6,8,"Everyone");
+        System.out.println("After replacing: "+sb);
+        
+        // reverse(reverse the text)
+        sb.reverse();
+        System.out.println("After reversing: "+sb);
+        
+        // check length and capacity
+        System.out.println("Length:"+sb.length());
+        System.out.println("Capacity:"+sb.capacity());
+        
+        String normalString = sb.toString();
+        System.out.println("Converted to string:"+normalString);
+        
+    }
+}
+```
