@@ -72,3 +72,46 @@ public class Main {
     }
 }
 ```
+
+
+## StringBuffer (Thread-safe, Slower)
+
+- StringBuffer is a Java class that represents a mutable sequence of characters — just like StringBuilder.
+- You can append, insert, delete, replace, reverse, and then convert the result to a String.
+- StringBuffer methods are synchronized, which makes it thread-safe (safe to use from multiple threads concurrently).
+- Synchronization means Java makes sure only one thread can run a synchronized method on the same StringBuffer object at a time, ensuring the data stays consistent and no two threads modify the text simultaneously in a conflicting way
+- StringBuffer is slower than StringBuilder because of lock acquisition and release.
+
+```java
+import java.lang.*;
+
+public class StringBufferExample {
+    public static void main(String[] args) throws InterruptedException{
+        StringBuffer str = new StringBuffer("start ");
+        
+        // Threads that append text
+        Thread t1 = new Thread(()->{
+            str.append("A");
+        });
+        
+        Thread t2 = new Thread(()->{
+            str.append(" B");
+        });
+        
+        t1.start();
+        t2.start();
+        
+        t1.join();
+        t2.join();
+        
+        System.out.println(str);
+    }
+}
+```
+
+#### Output:
+
+```
+start A B
+```
+
