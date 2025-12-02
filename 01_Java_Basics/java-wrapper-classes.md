@@ -1,6 +1,6 @@
 # Wrapper Classes in Java
 
-- Wrapper Classes in Java are usually class representation of Primitive datatypes.
+- Wrapper Classes in Java are the class representation of Primitive datatypes.
 
 | Primitive Type | Wrapper Class |
 | -------------- | ------------- |
