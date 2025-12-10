@@ -82,3 +82,34 @@ class Car {
 - When you call concrete implementations instead of interfaces
 - When you avoid dependency injection (constructor injection/setter injection)
 
+
+
+##  Using Interfaces
+
+- Tight coupling can also be performed using interfaces:
+
+```java
+public class Main {
+    public static void main(String[] args){
+        Car car = new Car();
+        car.drive();
+    }
+}
+interface Engine {
+    void start();
+}
+
+class DieselEngine implements Engine {
+    public void start(){
+        System.out.println("Diesel Engine started");
+    }
+}
+
+class Car {
+    Engine engine = new DieselEngine();
+    void drive(){
+        engine.start();
+        System.out.println("Car is moving");
+    }
+}
+```
