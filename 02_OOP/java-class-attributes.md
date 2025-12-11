@@ -7,7 +7,7 @@ public class Main {
 ```
 
 - Here x is called an attribute of the class, or it is an attribute within the class.
-- Attributes are also known as **fields**.
+- Attributes are also known as **fields**.   
 <img width="1244" height="171" alt="image" src="https://github.com/user-attachments/assets/6702ce95-516f-4100-b896-4cae9c71ce0d" />
 
 
