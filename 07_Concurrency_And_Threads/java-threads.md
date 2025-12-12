@@ -18,3 +18,17 @@ There are two main ways:
 1. By extending the Thread class:
 
 ```java
+class MyThread extends Thread {
+    @Override
+    public void run() {
+        System.out.println("Thread running: " + Thread.currentThread().getName());
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        MyThread t = new MyThread();
+        t.start();    // NEVER call run() directly
+    }
+}
+```
