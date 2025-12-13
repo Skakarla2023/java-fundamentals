@@ -32,3 +32,23 @@ public class Main {
     }
 }
 ```
+
+
+2. By implementing the Runnable interface
+
+```java
+class MyTask implements Runnable {
+    public void run() {
+        System.out.println("Runnable running: " + Thread.currentThread().getName());
+    }
+}
+
+public class Main2 {
+    public static void main(String[] args) {
+        Thread t = new Thread(new MyTask());
+        t.start();
+    }
+}
+```
+
+
