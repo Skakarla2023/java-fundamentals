@@ -86,3 +86,13 @@ Output:
 **java.time**
 
 - The modern and robust API for handling dates and times, introduced in Java 8.
+
+
+## Core API vs Java Language 
+
+| **Core Java Language** | **Core API** |
+|------------------------|--------------|
+| It is the Java language itself. | It is the ready-made library provided by Java.|
+| It tells Java how to write code. | It provides tools bor basic tasks. |
+| Includes rules like syntax and structure. | Includes classes and methods to use. |
+| eg: `class`, `object`, `if` , `for`, `while`.| eg: `String`, `Scanner`, `ArrayList`, `Math`|
