@@ -137,3 +137,12 @@ Java is 'fun' to learn
 Java is "fun" to learn
 ```
 
+## String Methods
+
+1. toUpperCase()
+2. toLowerCase()
+3. strip()
+4. trim()
+5. replaceAll()
+6. replace()
+7. lensth()
