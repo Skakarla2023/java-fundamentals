@@ -50,3 +50,71 @@ class Basics {
         System.out.println("User entered: " + n);
     }
 }
+```
+
+**Output**:
+
+```
+Enter a number:
+3
+User entered: 3
+```
+
+### java.io
+
+- Used for input and output operations such as file handling, streams (`FileInputStream`, `FileOutputStream`), and serialization.
+
+---
+
+### java.math
+
+- Provides classes for high-precision arithmetic such as `BigInteger` and `BigDecimal`.
+
+---
+
+### java.lang.Math
+
+- Provides mathematical methods such as `pow()`, `sqrt()`, `max()`, and `min()`.
+
+Example:
+
+```java
+class Main {
+    public static void main(String[] args) {
+        double a = Math.pow(3, 2);
+        double b = Math.sqrt(27);
+
+        System.out.println(a);
+        System.out.println(b);
+    }
+}
+```
+
+
+**Output**:
+```
+9.0
+5.196152422706632
+```
+
+
+### java.awt & java.swing
+
+Provide classes for building graphical user interfaces (GUI) in Java.
+
+### java.sql
+
+Provides JDBC (Java Database Connectivity) API to connect and interact with relational databases.
+
+### java.time
+
+A modern API for handling date and time, introduced in Java 8.
+
+### Core API vs Java Language
+
+| Core Java Language                     | Core API                                          |
+| -------------------------------------- | ------------------------------------------------- |
+| It is the Java language itself.        | It is the ready-made library provided by Java.    |
+| Defines how to write code.             | Provides tools for common tasks.                  |
+| Includes syntax and structure rules.   | Includes reusable classes and methods.            |
+| Example: `class`, `if`, `for`, `while` | Example: `String`, `Scanner`, `ArrayList`, `Math` |
