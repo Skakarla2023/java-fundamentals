@@ -118,3 +118,26 @@ A modern API for handling date and time, introduced in Java 8.
 | Defines how to write code.             | Provides tools for common tasks.                  |
 | Includes syntax and structure rules.   | Includes reusable classes and methods.            |
 | Example: `class`, `if`, `for`, `while` | Example: `String`, `Scanner`, `ArrayList`, `Math` |
+
+### java.nio
+
+- Provides non-blocking and high-performance input/output operations.
+- Used for handling large files and network programming efficiently.
+
+### java.net
+
+- Provides classes for network programming such as `URL`, `Socket`, and `HttpURLConnection`.
+- Used to build client-server applications.
+
+### java.util.concurrent
+
+- Provides utilities for concurrent programming.
+- Includes `ExecutorService`, `Future`, `Callable`, and thread pools.
+
+## Where Is Core API Used?
+
+- Web Applications (Spring, JSP)
+- Mobile Apps (Android)
+- Desktop Applications
+- Backend Systems
+- Data Processing
