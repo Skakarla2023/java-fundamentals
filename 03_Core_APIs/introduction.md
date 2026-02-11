@@ -15,7 +15,7 @@
 
 ### Key Core Java API Packages
 
-- These packages are bundled with Java Development Kit(JDK) and are essesntial in maany programming tasks.
+- These packages are bundled with Java Development Kit(JDK) and are essesntial in many programming tasks.
 
 **java.lang**:
 
@@ -53,7 +53,7 @@ User entered :3
 
 **java.math**:
 
-- This package provides packages for performing `mathematical` operations such as `pow`, `sqrt` etc.
+- This package provides methods and classes for performing `mathematical` operations such as `pow`, `sqrt` etc.
 
 ```java
 import java.math.*;
