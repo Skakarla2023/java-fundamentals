@@ -93,6 +93,41 @@ class AgeMain {
 <img width="1367" height="184" alt="image" src="https://github.com/user-attachments/assets/8fa8033b-4365-4d89-a242-cf83761d5d32" />
 
 
+Scenario : Insufficient attendance exception
+
+```java
+class InsufficientAttendanceException extends RuntimeException {
+    public InsufficientAttendanceException(String message){
+        super(message);
+    }
+}
+class Attendance {
+    double minattendance = 90;
+    void checkAttendance(double attendance) throws InsufficientAttendanceException{
+        if(attendance < minattendance){
+            throw new InsufficientAttendanceException("Insufficient attendace : be regular to classes");
+        }
+        else {
+            System.out.println("Attendance is good, maintain the same !");
+        }
+    }
+}
+class AttendanceMain {
+    public static void main(String[] args){
+        Attendance at = new Attendance();
+        try{
+            at.checkAttendance(86.79);
+        } catch (InsufficientAttendanceException e){
+            System.out.println("Exception: "+ e.getMessage());
+        }
+    }
+}
+```
+
+
+**Output**:
+
+<img width="1359" height="122" alt="image" src="https://github.com/user-attachments/assets/01660da5-1cce-4f78-874d-d2daa4ea6a45" />
 
 
 > Custom exceptions are user-defined exception classes in Java used to represent application-specific error conditions. They are created by extending either Exception (checked) or RuntimeException (unchecked). They improve code readability, maintainability, and provide meaningful error handling in business logic."
