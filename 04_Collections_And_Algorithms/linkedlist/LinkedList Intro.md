@@ -110,17 +110,108 @@ static Node insertAtPos(Node head, int data, int pos) {
 #### a) Delete from Beginning
 
 ```java
+    static Node deleteFromBeginning(Node head) {
+        if(head == null) {
+            System.out.println("List is empty");
+            return null;
+        }
 
+        return head.next;
+    }
 ```
 
 #### b) Delete from End
 
 ```java
+static Node deleteFromEnd(Node head) {
+        if(head == null) {
+            System.out.println("List is empty");
+            return null;
+        }
 
+        if(head.next == null) {
+            return null;
+        }
+
+        Node temp = head;
+        while(temp.next.next != null) {
+            temp = temp.next;
+        }
+
+        temp.next = null;
+
+        return head;
+    }
 ```
 
 #### c) Delete from Pos
 
 ```java
+static Node deleteFromPosition(Node head, int pos) {
+        if(head =  null) {
+            System.out.println("List is empty");
+            return null;
+        }
 
+        if(pos == 1){
+            return head.next;
+        }
+
+        Node temp = head;
+
+        for(int i=1 ;i < pos-1;i++) {
+            temp = temp.next;
+        }
+
+        if(temp.next == null) {
+            System.out.println("Invalid position");
+            return head;
+        }
+
+        temp.next = temp.next.next;
+
+        return head;
+    }
 ```
+
+**4. Find Middle Node**
+
+```java
+   static Node findMiddle(Node head) {
+        if(head == null) {
+            return null;
+        }
+
+        Node slow = head;
+        Node fast = head;
+
+        while(fast != null && slow.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+
+        return slow;
+    }
+```
+
+
+**5.reversing a Linked List**
+
+```java
+static Node reverseList(Node head) {
+        Node prev = null;
+        Node curr = head;
+
+        while(curr != null) {
+            Node next = curr.next;
+
+            curr.next = prev;
+
+            prev = curr;
+            curr = next;
+        }
+
+        return prev;
+    }
+```
+
