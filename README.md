@@ -2,7 +2,7 @@
 # Java Fundamentals – Learning & Practice Repository
 
 ## Overview
-
+ 
 This repository is a **structured, in-progress learning journal** for mastering **Java fundamentals to intermediate concepts**. It is being built **incrementally**, topic by topic, while learning and practicing.
 
 The goal of this repository is to:
