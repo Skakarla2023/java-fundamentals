@@ -9,3 +9,12 @@
 
 
 <img width="827" height="276" alt="image" src="https://github.com/user-attachments/assets/a4b7064c-b818-41c8-a6d9-fd1d3f0ce6a2" />
+
+
+### Common Implementations
+
+
+- **LinkedList**: A standard FIFO queue that allows null elements and is highly flexible.
+- **ArrayDeque:** A resizable array-based implementation that is generally faster than LinkedList and does not allow nulls.
+- **PriorityQueue:** An implementation where elements are processed based on their priority (natural ordering or a custom comparator) rather than insertion order.
+- **BlockingQueue:** A thread-safe interface (extending Queue) used for producer-consumer scenarios where operations "block" if the queue is empty or full. 
